@@ -1,0 +1,363 @@
+1632708186913	geckodriver	INFO	Listening on 127.0.0.1:58860
+1632708189968	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofile7bclhL"
+1632708190485	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofile7bclhL\\search.json.mozlz4", (void 0)))
+1632708195533	Marionette	INFO	Listening on port 58870
+1632708196021	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632708202753	Marionette	INFO	Stopped listening on port 58870
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632708204964	geckodriver	INFO	Listening on 127.0.0.1:58926
+1632708208022	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileUTaH9w"
+1632708208641	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileUTaH9w\\search.json.mozlz4", (void 0)))
+1632708213443	Marionette	INFO	Listening on port 58936
+1632708213872	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632708220407	Marionette	INFO	Stopped listening on port 58936
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632708222187	geckodriver	INFO	Listening on 127.0.0.1:58989
+1632708225256	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileNm4VEX"
+1632708225816	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileNm4VEX\\search.json.mozlz4", (void 0)))
+1632708230390	Marionette	INFO	Listening on port 58998
+1632708231334	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632708241905	Marionette	INFO	Stopped listening on port 58998
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632708243416	geckodriver	INFO	Listening on 127.0.0.1:59071
+1632708246489	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileK1g6KK"
+1632708247015	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileK1g6KK\\search.json.mozlz4", (void 0)))
+1632708251740	Marionette	INFO	Listening on port 59080
+1632708252553	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632708261943	Marionette	INFO	Stopped listening on port 59080
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632708263874	geckodriver	INFO	Listening on 127.0.0.1:59150
+1632708266927	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileDhn1Z4"
+1632708267458	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileDhn1Z4\\search.json.mozlz4", (void 0)))
+1632708272172	Marionette	INFO	Listening on port 59159
+1632708272979	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632708279762	Marionette	INFO	Stopped listening on port 59159
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632708281345	geckodriver	INFO	Listening on 127.0.0.1:59227
+1632708284413	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileOPuYR9"
+1632708285059	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileOPuYR9\\search.json.mozlz4", (void 0)))
+1632708289810	Marionette	INFO	Listening on port 59236
+1632708290443	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632708297007	Marionette	INFO	Stopped listening on port 59236
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632708299121	geckodriver	INFO	Listening on 127.0.0.1:59303
+1632708302212	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileBwjkWL"
+1632708302713	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileBwjkWL\\search.json.mozlz4", (void 0)))
+1632708307296	Marionette	INFO	Listening on port 59312
+1632708307613	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632708313926	Marionette	INFO	Stopped listening on port 59312
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632708315409	geckodriver	INFO	Listening on 127.0.0.1:59371
+1632708318491	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilezUbOFM"
+1632708319025	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilezUbOFM\\search.json.mozlz4", (void 0)))
+1632708323695	Marionette	INFO	Listening on port 59382
+1632708324547	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632708330745	Marionette	INFO	Stopped listening on port 59382
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632708332205	geckodriver	INFO	Listening on 127.0.0.1:61182
+1632708335252	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilekUvmHh"
+1632708335767	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilekUvmHh\\search.json.mozlz4", (void 0)))
+1632708340121	Marionette	INFO	Listening on port 61191
+1632708340616	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632708346866	Marionette	INFO	Stopped listening on port 61191
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632708348791	geckodriver	INFO	Listening on 127.0.0.1:61250
+1632708351882	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilejAFczH"
+1632708352425	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilejAFczH\\search.json.mozlz4", (void 0)))
+1632708356903	Marionette	INFO	Listening on port 61259
+1632708357976	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632708364332	Marionette	INFO	Stopped listening on port 61259
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632708366052	geckodriver	INFO	Listening on 127.0.0.1:61316
+1632708369146	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileO6RbSW"
+1632708369738	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileO6RbSW\\search.json.mozlz4", (void 0)))
+1632708374145	Marionette	INFO	Listening on port 61326
+1632708374698	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632708381818	Marionette	INFO	Stopped listening on port 61326
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632708383164	geckodriver	INFO	Listening on 127.0.0.1:61384
+1632708386218	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofile8DEXRm"
+1632708386754	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofile8DEXRm\\search.json.mozlz4", (void 0)))
+1632708391140	Marionette	INFO	Listening on port 61393
+1632708391773	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632708399340	Marionette	INFO	Stopped listening on port 61393
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632708401160	geckodriver	INFO	Listening on 127.0.0.1:61460
+1632708404230	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileXIHEYl"
+1632708404832	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileXIHEYl\\search.json.mozlz4", (void 0)))
+1632708409219	Marionette	INFO	Listening on port 61469
+1632708410280	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632708431669	Marionette	INFO	Stopped listening on port 61469
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1632727035307	geckodriver	INFO	Listening on 127.0.0.1:54731
+1632727038379	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileFC3h3D"
+1632727038933	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileFC3h3D\\search.json.mozlz4", (void 0)))
+1632727043609	Marionette	INFO	Listening on port 54740
+1632727044448	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727057324	Marionette	INFO	Stopped listening on port 54740
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632727059474	geckodriver	INFO	Listening on 127.0.0.1:54810
+1632727062531	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofile1SzJae"
+1632727063038	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofile1SzJae\\search.json.mozlz4", (void 0)))
+1632727067491	Marionette	INFO	Listening on port 54819
+1632727067932	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727081413	Marionette	INFO	Stopped listening on port 54819
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632727082830	geckodriver	INFO	Listening on 127.0.0.1:54890
+1632727085861	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileI96URr"
+1632727086436	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileI96URr\\search.json.mozlz4", (void 0)))
+1632727091206	Marionette	INFO	Listening on port 54899
+1632727091710	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+JavaScript error: http://101.133.169.100/yuns/index.php/goods/42.html, line 1057: ReferenceError: SetRemainTime is not defined
+1632727107547	Marionette	INFO	Stopped listening on port 54899
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1632727109032	geckodriver	INFO	Listening on 127.0.0.1:54983
+1632727112089	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileEM1b5r"
+1632727112675	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileEM1b5r\\search.json.mozlz4", (void 0)))
+1632727117183	Marionette	INFO	Listening on port 54992
+1632727118149	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+JavaScript error: http://101.133.169.100/yuns/index.php/goods/42.html, line 1057: ReferenceError: SetRemainTime is not defined
+1632727140984	Marionette	INFO	Stopped listening on port 54992
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1632727142614	geckodriver	INFO	Listening on 127.0.0.1:55082
+1632727145640	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilepL5E3k"
+1632727146132	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilepL5E3k\\search.json.mozlz4", (void 0)))
+1632727150603	Marionette	INFO	Listening on port 55092
+1632727150986	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+JavaScript error: http://101.133.169.100/yuns/index.php/goods/42.html, line 1057: ReferenceError: SetRemainTime is not defined
+1632727190325	Marionette	INFO	Stopped listening on port 55092
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632727191997	geckodriver	INFO	Listening on 127.0.0.1:55198
+1632727195040	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilePpaEEC"
+1632727195516	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilePpaEEC\\search.json.mozlz4", (void 0)))
+1632727200140	Marionette	INFO	Listening on port 55208
+1632727201067	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+JavaScript error: http://101.133.169.100/yuns/index.php/goods/42.html, line 1057: ReferenceError: SetRemainTime is not defined
+1632727221531	Marionette	INFO	Stopped listening on port 55208
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1632727223016	geckodriver	INFO	Listening on 127.0.0.1:55291
+1632727226080	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilevdl0Mm"
+1632727226571	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilevdl0Mm\\search.json.mozlz4", (void 0)))
+1632727230870	Marionette	INFO	Listening on port 55301
+1632727231399	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+JavaScript error: http://101.133.169.100/yuns/index.php/goods/42.html, line 1057: ReferenceError: SetRemainTime is not defined
+1632727258200	Marionette	INFO	Stopped listening on port 55301
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1632727259631	geckodriver	INFO	Listening on 127.0.0.1:55390
+1632727262680	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileQ6OyWR"
+1632727263193	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileQ6OyWR\\search.json.mozlz4", (void 0)))
+1632727267416	Marionette	INFO	Listening on port 55400
+1632727267513	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727306196	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:238:19
+TimedPromise@chrome://remote/content/marionette/sync.js:223:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: http://101.133.169.100/yuns/index.php/goods/42.html, line 1057: ReferenceError: SetRemainTime is not defined
+1632727332298	Marionette	INFO	Stopped listening on port 55400
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1632727333540	geckodriver	INFO	Listening on 127.0.0.1:55528
+1632727336582	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileFhhcCi"
+1632727337072	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileFhhcCi\\search.json.mozlz4", (void 0)))
+1632727342080	Marionette	INFO	Listening on port 55537
+1632727342438	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727359067	Marionette	INFO	Stopped listening on port 55537
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+[Parent 15676, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1632727360564	geckodriver	INFO	Listening on 127.0.0.1:55614
+1632727363638	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileXgs4Wj"
+1632727364286	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileXgs4Wj\\search.json.mozlz4", (void 0)))
+1632727368726	Marionette	INFO	Listening on port 55623
+1632727369250	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727375859	Marionette	INFO	Stopped listening on port 55623
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632727377190	geckodriver	INFO	Listening on 127.0.0.1:55678
+1632727380199	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileD2I8zX"
+1632727380684	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileD2I8zX\\search.json.mozlz4", (void 0)))
+1632727385335	Marionette	INFO	Listening on port 55688
+1632727385756	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727393460	Marionette	INFO	Stopped listening on port 55688
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632727394892	geckodriver	INFO	Listening on 127.0.0.1:55745
+1632727397919	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofiletfSn4h"
+1632727398396	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofiletfSn4h\\search.json.mozlz4", (void 0)))
+1632727402602	Marionette	INFO	Listening on port 55754
+1632727403441	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727413147	Marionette	INFO	Stopped listening on port 55754
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632727414726	geckodriver	INFO	Listening on 127.0.0.1:55821
+1632727417780	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilevKGePE"
+1632727418299	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilevKGePE\\search.json.mozlz4", (void 0)))
+1632727422631	Marionette	INFO	Listening on port 55831
+1632727423214	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727432841	Marionette	INFO	Stopped listening on port 55831
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632727434250	geckodriver	INFO	Listening on 127.0.0.1:55894
+1632727437297	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofile5b2JHb"
+1632727437807	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofile5b2JHb\\search.json.mozlz4", (void 0)))
+1632727442940	Marionette	INFO	Listening on port 55905
+1632727444558	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727451094	Marionette	INFO	Stopped listening on port 55905
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632727452672	geckodriver	INFO	Listening on 127.0.0.1:55976
+1632727455714	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileiH85cZ"
+1632727456199	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileiH85cZ\\search.json.mozlz4", (void 0)))
+1632727461066	Marionette	INFO	Listening on port 55985
+1632727461604	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727472354	Marionette	INFO	Stopped listening on port 55985
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1632727473843	geckodriver	INFO	Listening on 127.0.0.1:56057
+1632727476875	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofile80NxME"
+1632727477410	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofile80NxME\\search.json.mozlz4", (void 0)))
+1632727481513	Marionette	INFO	Listening on port 56066
+1632727481973	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727489406	Marionette	INFO	Stopped listening on port 56066
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632727491135	geckodriver	INFO	Listening on 127.0.0.1:56127
+1632727494200	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileQuQstZ"
+1632727494701	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileQuQstZ\\search.json.mozlz4", (void 0)))
+1632727499438	Marionette	INFO	Listening on port 56136
+1632727500238	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727506825	Marionette	INFO	Stopped listening on port 56136
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632727508509	geckodriver	INFO	Listening on 127.0.0.1:56203
+1632727511584	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofiley9BiLG"
+1632727512086	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofiley9BiLG\\search.json.mozlz4", (void 0)))
+1632727516355	Marionette	INFO	Listening on port 56212
+1632727517210	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727523616	Marionette	INFO	Stopped listening on port 56212
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632727525406	geckodriver	INFO	Listening on 127.0.0.1:56275
+1632727528454	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilecAsSJo"
+1632727528923	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofilecAsSJo\\search.json.mozlz4", (void 0)))
+1632727533549	Marionette	INFO	Listening on port 56286
+1632727534502	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727544772	Marionette	INFO	Stopped listening on port 56286
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1632727546196	geckodriver	INFO	Listening on 127.0.0.1:56356
+1632727549206	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileMO2zsZ"
+1632727549701	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileMO2zsZ\\search.json.mozlz4", (void 0)))
+1632727554935	Marionette	INFO	Listening on port 56366
+1632727555039	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727561896	Marionette	INFO	Stopped listening on port 56366
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632727563630	geckodriver	INFO	Listening on 127.0.0.1:56428
+1632727566710	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileqmkk2D"
+1632727567222	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileqmkk2D\\search.json.mozlz4", (void 0)))
+1632727572262	Marionette	INFO	Listening on port 56437
+1632727572784	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727580433	Marionette	INFO	Stopped listening on port 56437
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632727582579	geckodriver	INFO	Listening on 127.0.0.1:56507
+1632727585638	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileWOrdtk"
+1632727586148	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\lenovo\\AppData\\Local\\Temp\\rust_mozprofileWOrdtk\\search.json.mozlz4", (void 0)))
+1632727591220	Marionette	INFO	Listening on port 56517
+1632727591492	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://101.133.169.100/yuns/index.php, line 900: ReferenceError: SetRemainTime is not defined
+1632727608620	Marionette	INFO	Stopped listening on port 56517
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+

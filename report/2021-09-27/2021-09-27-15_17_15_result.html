@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2.1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 80%; }
+table       { font-size: 100%; }
+/* -- heading ---------------------------------------------------------------------- */
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+/* -- report ------------------------------------------------------------------------ */
+#total_row  { font-weight: bold; }
+.passCase   { color: #5cb85c; }
+.failCase   { color: #d9534f; font-weight: bold; }
+.errorCase  { color: #f0ad4e; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+</style>
+
+</head>
+<body >
+<script language="javascript" type="text/javascript">
+output_list = Array();
+/*level 调整增加只显示通过用例的分类 --Findyou
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+4:Error  
+*/
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level == 2 || level == 0 ) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level < 2 || level ==4) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+    //加入【详细】切换文字变化 --Findyou
+    detail_class=document.getElementsByClassName('case_detail');
+    //console.log(detail_class.length)
+    if (level == 3) {
+        for (var i = 0; i < detail_class.length; i++){
+            detail_class[i].innerHTML="收起"
+        }
+    }
+    else{
+            for (var i = 0; i < detail_class.length; i++){
+            detail_class[i].innerHTML="详细"
+        }
+    }
+}
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        //ID修改 点 为 下划线 -Findyou
+        tid0 = 't' + cid.substr(1) + '_' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        //修改点击无法收起的BUG，加入【详细】切换文字变化 --Findyou
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+            document.getElementById(cid).innerText = "详细"
+        }
+        else {
+            document.getElementById(tid).className = '';
+            document.getElementById(cid).innerText = "收起"
+        }
+    }
+}
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+</script>
+<div class='heading'>
+<h4 style="font-family: Microsoft YaHei">测试报告</h4>
+<p class='attribute'><strong>测试人员 : </strong> tester1,tester2</p>
+<p class='attribute'><strong>开始时间 : </strong> 2021-09-27 15:17:15</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:09:34.748076</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 22，通过 21，错误 1，通过率= 95.45%</p>
+
+<p class='description'>执行情况：</p>
+</div>
+
+
+<p id='show_detail_line'>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 95.45% }</a>
+<a class="btn btn-warning" href='javascript:showCase(4)'>错误{ 1 }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 21 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 22 }</a>
+</p>
+<table id='result_table' class="table table-condensed table-bordered table-hover">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 14px;">
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+    <td>截图</td>
+</tr>
+
+<tr class='errorClass warning'>
+    <td>ShangPingXZ.TestShouye</td>
+    <td class="text-center">9</td>
+    <td class="text-center">8</td>
+    <td class="text-center">0</td>
+    <td class="text-center">1</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',9)" class="case_detail" id='c1'>详细</a></td>
+    <td class="text-center">Assert or Error Image</td>
+</tr>
+
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShangpingxz_01: 验证选择商品品牌是否匹配显示出来的商品</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt1_1: starttime:2021-09-27-15-17-30
+格子裙
+endTime:2021-09-27-15-17-37
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_2' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShangpingxz_02: 验证排序的方式是否有效排序</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt1_2: starttime:2021-09-27-15-17-54
+毛衣女装
+endTime:2021-09-27-15-18-01
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_3' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShangpingxz_03: 验证能否进入特定商品购买页面-毛衣女装</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt1_3: starttime:2021-09-27-15-18-17
+['f5050f4e-473e-4528-bd1b-a438a2132cfb', '2445f577-b858-4990-b564-92d9e40e4292']
+f5050f4e-473e-4528-bd1b-a438a2132cfb
+毛衣女装
+endTime:2021-09-27-15-18-27
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_4' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShangpingxz_04: 验证是否能选择商品款式</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt1_4: starttime:2021-09-27-15-18-46
+['fd701550-003e-4ef9-a050-d6bdf8e648a2', 'b1c72e4c-a2c6-4121-aafa-88623a16d8c3']
+fd701550-003e-4ef9-a050-d6bdf8e648a2
+endTime:2021-09-27-15-19-00
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_5' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShangpingxz_05: 验证是否能正常输入数量</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_5'>通过</button>
+    <div id='div_pt1_5' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_5'>通过</button>
+    <div id='div_pt1_5' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt1_5: starttime:2021-09-27-15-19-41
+['27d24634-ebfd-4e2a-831f-0ccd749a1e09', 'd5449b17-8ca5-4c6e-9e2c-9304d2739dcf']
+27d24634-ebfd-4e2a-831f-0ccd749a1e09
+4
+endTime:2021-09-27-15-19-50
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_6' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShangpingxz_06: 验证是否能正常选中数量</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_6'>通过</button>
+    <div id='div_pt1_6' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_6'>通过</button>
+    <div id='div_pt1_6' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt1_6: starttime:2021-09-27-15-20-06
+['3998a1c1-bdf1-46b1-8785-5d6968632b40', 'b2bc3627-de0a-46ed-ac31-17b6c2e24618']
+3998a1c1-bdf1-46b1-8785-5d6968632b40
+4
+endTime:2021-09-27-15-20-21
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_7' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShangpingxz_07: 验证能否正常加入购物车</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_7'>通过</button>
+    <div id='div_pt1_7' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_7'>通过</button>
+    <div id='div_pt1_7' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt1_7: starttime:2021-09-27-15-20-37
+['a2d8cb5a-8c63-4311-b14c-ae7836d464ec', 'd2a9e7d2-0e0a-4f4d-bf78-8145bbf7a1c0']
+a2d8cb5a-8c63-4311-b14c-ae7836d464ec
+宝贝已成功添加到购物车
+endTime:2021-09-27-15-20-58
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='ft1_8' class='none'>
+    <td class='errorCase' width='300px'><div class='testcase'>testShangpingxz_08: 验证能否直接购买-提示登录</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_8'>错误</button>
+    <div id='div_ft1_8' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_8'>错误</button>
+    <div id='div_ft1_8' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+ft1_8: starttime:2021-09-27-15-21-38
+['ba70d7ba-2067-482b-9d44-f4043f1669e0', 'af43b2d1-e30e-4209-9b0a-f7d47b0f7909']
+ba70d7ba-2067-482b-9d44-f4043f1669e0
+endTime:2021-09-27-15-22-12
+Traceback (most recent call last):
+  File "F:\01代码\YunShangtest\case\web\ShangPingXZ.py", line 118, in testShangpingxz_08
+    el1=self.driver.find_element_by_xpath('//div[@id="login_user"]/span')
+  File "F:\软件\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "F:\软件\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 976, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "F:\软件\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "F:\软件\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: //div[@id="login_user"]/span
+
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt1_9' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShangpingxz_09: 验证能否正常查看商品评价</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_9'>通过</button>
+    <div id='div_pt1_9' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_9'>通过</button>
+    <div id='div_pt1_9' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt1_9: starttime:2021-09-27-15-22-28
+['9444a68f-fd0b-4f56-a3f5-21d7efa2f792', '5bccc9f2-0742-4277-a20e-ecc9671ed144']
+9444a68f-fd0b-4f56-a3f5-21d7efa2f792
+全部评价（0）
+endTime:2021-09-27-15-22-38
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr class='passClass warning'>
+    <td>Shouye.TestShouye</td>
+    <td class="text-center">13</td>
+    <td class="text-center">13</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',13)" class="case_detail" id='c2'>详细</a></td>
+    <td class="text-center">Assert or Error Image</td>
+</tr>
+
+<tr id='pt2_1' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShouye01: 测试首页导航文案显示是否正常</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_1: starttime:2021-09-27-15-22-55
+endTime:2021-09-27-15-22-55
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_2' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShouye02: 验证搜索框UI是否显示正常</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_2: starttime:2021-09-27-15-23-13
+请输入你要查找的关键字
+endTime:2021-09-27-15-23-13
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_3' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShouye03: 验证搜索出正确结果是否正确</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_3: starttime:2021-09-27-15-23-29
+毛衣女装
+endTime:2021-09-27-15-23-33
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_4' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShouye04: 验证搜索的内容无结果时默认文案是否显示正确</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_4'>通过</button>
+    <div id='div_pt2_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_4'>通过</button>
+    <div id='div_pt2_4' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_4: starttime:2021-09-27-15-23-49
+抱歉，没有找到相关的商品
+endTime:2021-09-27-15-23-52
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_5' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShouye05: 验证能否成功进入购物车页面</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_5'>通过</button>
+    <div id='div_pt2_5' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_5'>通过</button>
+    <div id='div_pt2_5' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_5: starttime:2021-09-27-15-24-10
+购物车
+确认订单
+完成付款
+endTime:2021-09-27-15-24-11
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_6' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShouye06: 验证导航中的登录是否能进入登录页面</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_6'>通过</button>
+    <div id='div_pt2_6' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_6'>通过</button>
+    <div id='div_pt2_6' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_6: starttime:2021-09-27-15-24-31
+用户登录
+endTime:2021-09-27-15-24-32
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_7' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShouye07: 验证从右侧登录入口是否进入登录页面</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_7'>通过</button>
+    <div id='div_pt2_7' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_7'>通过</button>
+    <div id='div_pt2_7' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_7: starttime:2021-09-27-15-24-48
+用户登录
+endTime:2021-09-27-15-24-49
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_8' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShouye08: 验证导航中的注册是否能进入注册页面</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_8'>通过</button>
+    <div id='div_pt2_8' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_8'>通过</button>
+    <div id='div_pt2_8' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_8: starttime:2021-09-27-15-25-06
+用户注册
+endTime:2021-09-27-15-25-06
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_9' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShouye09: 验证从右侧注册入口是否进入注册页面</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_9'>通过</button>
+    <div id='div_pt2_9' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_9'>通过</button>
+    <div id='div_pt2_9' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_9: starttime:2021-09-27-15-25-23
+用户注册
+endTime:2021-09-27-15-25-23
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_10' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShouye10: 验证能否从搜索框下的链接进入商品页面</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_10'>通过</button>
+    <div id='div_pt2_10' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_10'>通过</button>
+    <div id='div_pt2_10' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_10: starttime:2021-09-27-15-25-43
+毛衣女装
+endTime:2021-09-27-15-25-44
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_11' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShouye11: 验证商品分类能够展现下级分类</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_11'>通过</button>
+    <div id='div_pt2_11' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_11'>通过</button>
+    <div id='div_pt2_11' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_11: starttime:2021-09-27-15-26-00
+儿童装
+endTime:2021-09-27-15-26-01
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_12' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShouye12: 验证能否从商品分类进入商品页面</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_12' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_12'>通过</button>
+    <div id='div_pt2_12' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_12' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_12'>通过</button>
+    <div id='div_pt2_12' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_12: starttime:2021-09-27-15-26-19
+抱歉，没有找到相关的商品
+endTime:2021-09-27-15-26-20
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='pt2_13' class='hiddenRow'>
+    <td class='passCase' width='300px'><div class='testcase'>testShouye13: 验证能否从精选商品的分类进入商品页面</div></td>
+    <td colspan='5' align='left' width='600px'> <!--print 输出框位置-->
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_13' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_13'>通过</button>
+    <div id='div_pt2_13' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_13' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_13'>通过</button>
+    <div id='div_pt2_13' class="collapse in">
+    <pre style="overflow-y:scroll; overflow-x:hidden;height:200px; width:600px; margin:auto; border:1px solid #e1e1e1;">
+    
+pt2_13: starttime:2021-09-27-15-26-38
+['699e9298-688e-403a-a253-cf7460dc19dd', '95717818-274e-401a-8e63-1feb69dda71d']
+699e9298-688e-403a-a253-cf7460dc19dd
+限时抢购
+endTime:2021-09-27-15-26-48
+
+
+    </pre>
+    </div>
+    </td>
+    <td align="right">
+        <a hidden="hidden" href="../images/">
+            <img   src="../images/" height="200px" width="400px"/>
+        </a>
+    </td>
+</tr>
+
+
+
+<tr id='total_row' class="text-center active">
+    <td>总计</td>
+    <td>22</td>
+    <td>21</td>
+    <td>0</td>
+    <td>1</td>
+    <td>通过率：95.45%</td>
+    <td> <a href="" target="_blank"></a></td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+</body>
+</html>
